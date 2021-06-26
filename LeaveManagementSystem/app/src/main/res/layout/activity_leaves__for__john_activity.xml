@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/john"
+    tools:context=".Leaves_For_John_activity">
+
+
+    <Button
+
+        android:id="@+id/btn_casual"
+        android:layout_width="232dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="@color/teal_700"
+        android:drawableLeft="@drawable/apply"
+        android:gravity="center"
+        android:text="Apply for a casual leave"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/btn_medical"
+        android:layout_width="232dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/colorAmber_900"
+        android:drawableLeft="@drawable/apply"
+        android:gravity="center"
+        android:text="Apply for a medical leave"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_casual"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+
+        android:id="@+id/btn_annual"
+        android:layout_width="232dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/colorPurple_A400"
+        android:drawableLeft="@drawable/apply"
+        android:text="Apply for an annual leave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_medical"
+        tools:ignore="RtlHardcoded" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

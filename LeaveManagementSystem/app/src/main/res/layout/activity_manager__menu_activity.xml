@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/redwall"
+    tools:context=".Manager_Menu_activity">
+
+    <ImageView
+        android:id="@+id/imageView_manager"
+        style="@style/myImageView"
+        android:layout_width="336dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/manager2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <Button
+
+        android:id="@+id/manager_leave_balance"
+        android:layout_width="309dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/teal_700"
+        android:drawableLeft="@drawable/balance"
+        android:gravity="center"
+        android:text="@string/view_leave_balance_of_all_employees"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reset"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+
+        android:id="@+id/btn_reset"
+        android:layout_width="309dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/reset"
+        android:gravity="center"
+        android:text="@string/reset_all_text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_manager"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/approve_or_reject_btn"
+        android:layout_width="309dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorRed_A400"
+        android:drawableLeft="@drawable/check"
+        android:gravity="center"
+        android:text="@string/approve_amp_reject"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manager_leave_balance"
+        tools:ignore="RtlHardcoded" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

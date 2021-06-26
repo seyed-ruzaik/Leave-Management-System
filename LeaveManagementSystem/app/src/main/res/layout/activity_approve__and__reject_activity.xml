@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".Approve_And_Reject_activity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        tools:ignore="UselessLeaf" />
+
+    <ListView
+        android:id="@+id/checkable_list2"
+        android:layout_width="600dp"
+        android:textColor="@color/white"
+        android:background="@drawable/colored"
+        android:layout_height="400dp">
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_approve"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="201dp"
+        android:layout_marginBottom="120dp"
+        android:drawableLeft="@drawable/approve"
+        android:gravity="center"
+        android:text="Approve"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btn_reject"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="120dp"
+        android:drawableLeft="@drawable/rejected"
+        android:gravity="center"
+        android:text="Reject"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>

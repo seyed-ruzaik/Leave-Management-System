@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Leave Management System</string>
+    <string name="brian_cooper_manager_string">Brian Cooper Manager</string>
+    <string name="john_doe_employee_string">John Doe Employee</string>
+    <string name="jane_doe_employee_string">Jane Doe Employee</string>
+    <string name="approve_amp_reject"><![CDATA[approve & reject]]></string>
+    <string name="view_leave_balance_of_all_employees">View Leave Balance Of All Employees</string>
+    <string name="reset_all_text">Reset All</string>
+</resources>

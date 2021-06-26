@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colors"
+    tools:context=".MainActivity" >
+
+    <Button
+
+        android:id="@+id/btn_manager"
+        android:layout_width="228dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/teal_700"
+        android:drawableLeft="@drawable/manager"
+        android:gravity="center"
+        android:text="@string/brian_cooper_manager_string"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_home"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/approve_or_reject_btn"
+        android:layout_width="228dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:backgroundTint="@color/colorAmber_900"
+        android:drawableLeft="@drawable/employee"
+        android:text="@string/john_doe_employee_string"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_manager"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+
+        android:id="@+id/employee_jane_btn"
+        android:layout_width="228dp"
+        android:layout_height="71dp"
+        android:backgroundTint="@color/colorPurple_A400"
+        android:layout_marginTop="44dp"
+        android:drawableLeft="@drawable/employee"
+        android:text="@string/jane_doe_employee_string"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/approve_or_reject_btn"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/imageView_home"
+        style="@style/myImageView"
+        android:layout_width="348dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/office"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
